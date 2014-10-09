@@ -1,0 +1,109 @@
+.clear {
+	clear: both;
+	display: block;
+}
+
+section {
+	width: $colwidth;
+	margin: auto;
+
+	div.half {
+		width: 45%;
+		float: left;
+
+		&:nth-of-type(even) {
+			float: right;
+		}
+	}
+}
+
+.to {
+	&.right {
+		float: right;
+	}
+
+	&.left {
+		float: left;
+	}
+}
+
+h1, h2, h3, h4 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
+
+
+	&.black {
+		color: black;
+	}
+
+	&.orange {
+		color: $orange;
+	}
+
+	&.white {
+		color: white;
+	}
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 50px;
+	color: $orange;
+
+}
+
+h3 {
+	font-size: 30px;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	color: #a0a0a0;
+	margin-bottom: 1em;
+}
+
+a.button {
+
+	border-radius: 3px;
+	border: 3px solid;
+	padding: 7px 13px !important;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 200px;
+	text-align: center;
+
+	&.small {
+		width: auto;
+		border-width: 2px;
+		border-radius: 2px;
+		padding: 5px 7px !important;
+	}
+
+	&.white {
+		border-color: white;
+		color: white;
+
+		&:hover {
+			background-color: white;
+			color: $orange;
+		}
+	}
+
+	&.orange {
+		border-color: $orange;
+		color: $orange;
+
+		&:hover {
+			background-color: $orange;
+			color: white;
+		}
+	}
+
+}
