@@ -1,0 +1,16 @@
+@import 'colors';
+@import 'header';
+@import 'elements';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-color: #a0a0a0;
+ 	font-family: "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+ 	font-size: 16px;
+ 	-webkit-font-smoothing: antialiased;
+}
