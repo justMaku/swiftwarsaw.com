@@ -398,6 +398,87 @@ header .counter div strong {
   z-index: 85;
 }
 
+/* line 1, ../scss/sections/_creators.scss */
+#creators {
+  padding-top: 40px;
+}
+/* line 5, ../scss/sections/_creators.scss */
+#creators h2 {
+  margin-bottom: 40px;
+}
+/* line 9, ../scss/sections/_creators.scss */
+#creators .creator {
+  width: 20%;
+  float: left;
+  position: relative;
+}
+/* line 14, ../scss/sections/_creators.scss */
+#creators .creator:last-of-type {
+  margin-right: 0%;
+}
+/* line 19, ../scss/sections/_creators.scss */
+#creators .creator img {
+  border-radius: 240px;
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: auto;
+}
+/* line 28, ../scss/sections/_creators.scss */
+#creators .creator span.name {
+  margin-top: 20px;
+  display: inline-block;
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+  color: #333333;
+}
+/* line 37, ../scss/sections/_creators.scss */
+#creators .creator span.description {
+  font-size: 18px;
+  color: #9f9393;
+  font-style: italic;
+  text-align: center;
+  font-weight: 300;
+  display: inline-block;
+  text-align: center;
+}
+/* line 48, ../scss/sections/_creators.scss */
+#creators .creator .links {
+  display: block;
+  width: 127px;
+  margin: 1em auto;
+}
+/* line 54, ../scss/sections/_creators.scss */
+#creators .creator .links a {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  font-family: "FontAwesome";
+  color: black;
+  background-color: white;
+  border-radius: 35px;
+  float: left;
+  margin-right: 11px;
+}
+/* line 65, ../scss/sections/_creators.scss */
+#creators .creator .links a:last-of-type {
+  margin-right: 0em;
+}
+/* line 69, ../scss/sections/_creators.scss */
+#creators .creator .links a:before {
+  width: 35px;
+  text-align: center;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+}
+/* line 77, ../scss/sections/_creators.scss */
+#creators .creator .links a:hover {
+  background-color: #f47a27;
+  color: white;
+}
+
 /* line 1, ../scss/sections/_footer.scss */
 footer {
   position: fixed;
