@@ -1,94 +1,98 @@
 /* line 1, ../scss/_elements.scss */
 .clear {
   clear: both;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0px !important;
+  width: 0px !important;
   display: block !important;
 }
 
-/* line 6, ../scss/_elements.scss */
+/* line 10, ../scss/_elements.scss */
 section {
   width: 850px;
   margin: auto;
 }
-/* line 10, ../scss/_elements.scss */
+/* line 14, ../scss/_elements.scss */
 section div.half {
   width: 45%;
   float: left;
 }
-/* line 14, ../scss/_elements.scss */
+/* line 18, ../scss/_elements.scss */
 section div.half:nth-of-type(even) {
   float: right;
 }
 
-/* line 20, ../scss/_elements.scss */
+/* line 24, ../scss/_elements.scss */
 .background {
   width: 100%;
 }
-/* line 24, ../scss/_elements.scss */
+/* line 28, ../scss/_elements.scss */
 .background.gray {
   background-color: #f7f6f6;
 }
-/* line 28, ../scss/_elements.scss */
+/* line 32, ../scss/_elements.scss */
 .background.white {
   background-color: white;
 }
 
-/* line 34, ../scss/_elements.scss */
+/* line 38, ../scss/_elements.scss */
 .to.right {
   float: right;
 }
-/* line 38, ../scss/_elements.scss */
+/* line 42, ../scss/_elements.scss */
 .to.left {
   float: left;
 }
 
-/* line 43, ../scss/_elements.scss */
+/* line 47, ../scss/_elements.scss */
 h1, h2, h3, h4 {
   text-align: center;
   text-transform: uppercase;
   font-weight: 300;
 }
-/* line 49, ../scss/_elements.scss */
+/* line 53, ../scss/_elements.scss */
 h1.black, h2.black, h3.black, h4.black {
   color: black;
 }
-/* line 53, ../scss/_elements.scss */
+/* line 57, ../scss/_elements.scss */
 h1.orange, h2.orange, h3.orange, h4.orange {
   color: #f47a27;
 }
-/* line 57, ../scss/_elements.scss */
+/* line 61, ../scss/_elements.scss */
 h1.white, h2.white, h3.white, h4.white {
   color: white;
 }
 
-/* line 62, ../scss/_elements.scss */
+/* line 66, ../scss/_elements.scss */
 h1 {
   font-size: 40px;
 }
 
-/* line 66, ../scss/_elements.scss */
+/* line 70, ../scss/_elements.scss */
 h2 {
   font-size: 50px;
   color: #f47a27;
 }
 
-/* line 72, ../scss/_elements.scss */
+/* line 76, ../scss/_elements.scss */
 h3 {
   font-size: 30px;
 }
 
-/* line 76, ../scss/_elements.scss */
+/* line 80, ../scss/_elements.scss */
 a {
   text-decoration: none;
   transition-duration: 0.3s;
 }
 
-/* line 81, ../scss/_elements.scss */
+/* line 85, ../scss/_elements.scss */
 p {
   color: #a0a0a0;
   margin-bottom: 1em;
 }
 
-/* line 86, ../scss/_elements.scss */
+/* line 90, ../scss/_elements.scss */
 a.button {
   border-radius: 3px;
   border: 3px solid;
@@ -98,7 +102,7 @@ a.button {
   width: 200px;
   text-align: center;
 }
-/* line 96, ../scss/_elements.scss */
+/* line 100, ../scss/_elements.scss */
 a.button.small {
   width: 80px;
   display: inline-block;
@@ -106,22 +110,22 @@ a.button.small {
   border-radius: 2px;
   padding: 5px 7px !important;
 }
-/* line 104, ../scss/_elements.scss */
+/* line 108, ../scss/_elements.scss */
 a.button.white {
   border-color: white;
   color: white;
 }
-/* line 108, ../scss/_elements.scss */
+/* line 112, ../scss/_elements.scss */
 a.button.white:hover {
   background-color: white;
   color: #f47a27;
 }
-/* line 114, ../scss/_elements.scss */
+/* line 118, ../scss/_elements.scss */
 a.button.orange {
   border-color: #f47a27;
   color: #f47a27;
 }
-/* line 118, ../scss/_elements.scss */
+/* line 122, ../scss/_elements.scss */
 a.button.orange:hover {
   background-color: #f47a27;
   color: white;
@@ -230,8 +234,8 @@ header .counter div strong {
 
 /* line 1, ../scss/sections/_when.scss */
 #when {
-  margin-top: 75px;
-  margin-bottom: 1em;
+  padding-top: 75px;
+  padding-bottom: 1em;
 }
 /* line 5, ../scss/sections/_when.scss */
 #when h2 {
@@ -313,11 +317,10 @@ header .counter div strong {
 #who .speaker img {
   border-radius: 240px;
   width: 240px;
-  height: 240px;
   display: block;
   margin: auto;
 }
-/* line 30, ../scss/sections/_who.scss */
+/* line 29, ../scss/sections/_who.scss */
 #who .speaker span.name {
   margin-top: 20px;
   display: inline-block;
@@ -326,17 +329,17 @@ header .counter div strong {
   text-align: center;
   color: #333333;
 }
-/* line 39, ../scss/sections/_who.scss */
+/* line 38, ../scss/sections/_who.scss */
 #who .speaker span.description {
   font-size: 18px;
   color: #9f9393;
   font-style: italic;
-  text-align: center;
   font-weight: 300;
   display: inline-block;
   text-align: center;
+  width: 100%;
 }
-/* line 50, ../scss/sections/_who.scss */
+/* line 49, ../scss/sections/_who.scss */
 #who .speaker .links {
   display: block;
   margin: 1em 0;
@@ -344,7 +347,7 @@ header .counter div strong {
   left: 50%;
   transform: translateX(-50%);
 }
-/* line 58, ../scss/sections/_who.scss */
+/* line 57, ../scss/sections/_who.scss */
 #who .speaker .links a {
   width: 35px;
   height: 35px;
@@ -356,11 +359,11 @@ header .counter div strong {
   float: left;
   margin-right: 11px;
 }
-/* line 69, ../scss/sections/_who.scss */
+/* line 68, ../scss/sections/_who.scss */
 #who .speaker .links a:last-of-type {
   margin-right: 0em;
 }
-/* line 73, ../scss/sections/_who.scss */
+/* line 72, ../scss/sections/_who.scss */
 #who .speaker .links a:before {
   width: 35px;
   text-align: center;
@@ -368,7 +371,7 @@ header .counter div strong {
   height: 35px;
   line-height: 35px;
 }
-/* line 81, ../scss/sections/_who.scss */
+/* line 80, ../scss/sections/_who.scss */
 #who .speaker .links a:hover {
   background-color: #f47a27;
   color: white;
@@ -402,11 +405,10 @@ header .counter div strong {
 #creators .creator img {
   border-radius: 240px;
   width: 120px;
-  height: 120px;
   display: block;
   margin: auto;
 }
-/* line 28, ../scss/sections/_creators.scss */
+/* line 27, ../scss/sections/_creators.scss */
 #creators .creator span.name {
   margin-top: 20px;
   display: inline-block;
@@ -415,7 +417,7 @@ header .counter div strong {
   text-align: center;
   color: #333333;
 }
-/* line 37, ../scss/sections/_creators.scss */
+/* line 36, ../scss/sections/_creators.scss */
 #creators .creator span.description {
   font-size: 18px;
   color: #9f9393;
@@ -425,13 +427,13 @@ header .counter div strong {
   display: inline-block;
   text-align: center;
 }
-/* line 48, ../scss/sections/_creators.scss */
+/* line 47, ../scss/sections/_creators.scss */
 #creators .creator .links {
   display: block;
   width: 127px;
   margin: 1em auto;
 }
-/* line 54, ../scss/sections/_creators.scss */
+/* line 53, ../scss/sections/_creators.scss */
 #creators .creator .links a {
   width: 35px;
   height: 35px;
@@ -443,11 +445,11 @@ header .counter div strong {
   float: left;
   margin-right: 11px;
 }
-/* line 65, ../scss/sections/_creators.scss */
+/* line 64, ../scss/sections/_creators.scss */
 #creators .creator .links a:last-of-type {
   margin-right: 0em;
 }
-/* line 69, ../scss/sections/_creators.scss */
+/* line 68, ../scss/sections/_creators.scss */
 #creators .creator .links a:before {
   width: 35px;
   text-align: center;
@@ -455,7 +457,7 @@ header .counter div strong {
   height: 35px;
   line-height: 35px;
 }
-/* line 77, ../scss/sections/_creators.scss */
+/* line 76, ../scss/sections/_creators.scss */
 #creators .creator .links a:hover {
   background-color: #f47a27;
   color: white;
@@ -537,4 +539,113 @@ footer .links a:hover {
 #fakefooter {
   height: 530px;
   background-color: transparent;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 720px) {
+  /* line 1, ../scss/_responsive.scss */
+  body {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  /* line 7, ../scss/_responsive.scss */
+  header {
+    width: 100%;
+    padding: 0;
+  }
+  /* line 11, ../scss/_responsive.scss */
+  header > div {
+    width: 100%;
+  }
+  /* line 15, ../scss/_responsive.scss */
+  header h1 {
+    padding-top: 52px;
+  }
+  /* line 19, ../scss/_responsive.scss */
+  header nav {
+    display: none;
+  }
+  /* line 25, ../scss/_responsive.scss */
+  header .counter div {
+    width: 33%;
+  }
+  /* line 29, ../scss/_responsive.scss */
+  header .counter .seconds {
+    display: none;
+  }
+
+  /* line 35, ../scss/_responsive.scss */
+  section {
+    width: 100%;
+  }
+  /* line 39, ../scss/_responsive.scss */
+  section h2 {
+    text-align: center !important;
+  }
+  /* line 43, ../scss/_responsive.scss */
+  section div.half {
+    width: 100%;
+    margin: 0;
+    padding: 0em 1em;
+    float: left !important;
+  }
+
+  /* line 51, ../scss/_responsive.scss */
+  #about {
+    padding: 35px;
+  }
+  /* line 55, ../scss/_responsive.scss */
+  #about div.half:nth-of-type(1) {
+    margin-bottom: 35px;
+  }
+
+  /* line 61, ../scss/_responsive.scss */
+  #when {
+    padding-top: 35px;
+  }
+  /* line 64, ../scss/_responsive.scss */
+  #when h2.black {
+    margin-bottom: 10px;
+  }
+  /* line 68, ../scss/_responsive.scss */
+  #when div.half {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  /* line 73, ../scss/_responsive.scss */
+  #when div.half span {
+    float: none !important;
+  }
+  /* line 78, ../scss/_responsive.scss */
+  #when p {
+    padding: 0em 1em;
+    padding-top: 30px;
+  }
+  /* line 83, ../scss/_responsive.scss */
+  #when a.button {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  /* line 90, ../scss/_responsive.scss */
+  #who .speaker {
+    width: 100%;
+  }
+  /* line 93, ../scss/_responsive.scss */
+  #who .speaker img {
+    max-width: 240px;
+    width: 90%;
+  }
+
+  /* line 101, ../scss/_responsive.scss */
+  #creators .creator {
+    width: 100%;
+  }
+  /* line 104, ../scss/_responsive.scss */
+  #creators .creator img {
+    max-width: 240px;
+    width: 90%;
+  }
 }

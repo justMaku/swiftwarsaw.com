@@ -22,3 +22,9 @@ body {
 @import 'sections/what';
 @import 'sections/creators';
 @import 'sections/footer';
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 720px) { 
+	@import 'responsive';
+}
