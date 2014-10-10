@@ -374,30 +374,6 @@ header .counter div strong {
   color: white;
 }
 
-/* line 90, ../scss/sections/_who.scss */
-.Talor_Swift {
-  font-family: "Roboto";
-  line-height: 1.2;
-  position: absolute;
-  left: 1254.406px;
-  top: 2223px;
-  z-index: 84;
-}
-
-/* line 99, ../scss/sections/_who.scss */
-.And_another_nice_placeholer_ {
-  font-size: 18px;
-  font-family: "Roboto";
-  color: #9f9393;
-  font-style: italic;
-  line-height: 1.667;
-  text-align: center;
-  position: absolute;
-  left: 1200.006px;
-  top: 2292.599px;
-  z-index: 85;
-}
-
 /* line 1, ../scss/sections/_creators.scss */
 #creators {
   padding-top: 40px;
@@ -481,6 +457,7 @@ header .counter div strong {
 
 /* line 1, ../scss/sections/_footer.scss */
 footer {
+  padding: 80px 0px;
   position: fixed;
   z-index: -1;
   bottom: 0;
@@ -488,13 +465,69 @@ footer {
   width: 100%;
   height: 530px;
 }
+/* line 4, ../scss/sections/_footer.scss */
+footer a {
+  color: white;
+  font-weight: bold;
+}
+/* line 16, ../scss/sections/_footer.scss */
+footer h2, footer h3, footer h4 {
+  color: white;
+}
+/* line 20, ../scss/sections/_footer.scss */
+footer h2 {
+  margin-bottom: 35px;
+}
+/* line 24, ../scss/sections/_footer.scss */
+footer h4 {
+  margin-bottom: 80px;
+}
+/* line 28, ../scss/sections/_footer.scss */
+footer span {
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+/* line 35, ../scss/sections/_footer.scss */
+footer .links {
+  display: block;
+  width: 200px;
+  margin: 1em auto;
+  margin-bottom: 90px;
+}
+/* line 41, ../scss/sections/_footer.scss */
+footer .links a {
+  float: left;
+  margin-right: 20px;
+  font-size: 37px;
+  font-family: "FontAwesome";
+  color: white;
+}
+/* line 48, ../scss/sections/_footer.scss */
+footer .links a:last-of-type {
+  margin-right: 0em;
+}
+/* line 52, ../scss/sections/_footer.scss */
+footer .links a:before {
+  width: 35px;
+  text-align: center;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+}
+/* line 60, ../scss/sections/_footer.scss */
+footer .links a:hover {
+  background-color: #f47a27;
+  color: white;
+}
 
-/* line 10, ../scss/sections/_footer.scss */
+/* line 68, ../scss/sections/_footer.scss */
 #fakebackground {
   background-color: white;
 }
 
-/* line 14, ../scss/sections/_footer.scss */
+/* line 72, ../scss/sections/_footer.scss */
 #fakefooter {
   height: 530px;
   background-color: transparent;
