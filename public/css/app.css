@@ -155,53 +155,61 @@ header {
   height: 580px;
 }
 /* line 8, ../scss/_header.scss */
+header a.hamburger {
+  display: none;
+}
+/* line 12, ../scss/_header.scss */
 header > div {
   width: 850px;
   margin: auto;
 }
-/* line 13, ../scss/_header.scss */
+/* line 17, ../scss/_header.scss */
 header span {
   float: left;
   padding: 5px 7px;
 }
-/* line 18, ../scss/_header.scss */
+/* line 22, ../scss/_header.scss */
+header nav.mobile {
+  display: none;
+}
+/* line 26, ../scss/_header.scss */
 header nav {
   float: right;
 }
-/* line 21, ../scss/_header.scss */
+/* line 29, ../scss/_header.scss */
 header nav a {
   color: white;
   opacity: 0.5;
   text-transform: uppercase;
   padding-right: 20px;
 }
-/* line 28, ../scss/_header.scss */
+/* line 36, ../scss/_header.scss */
 header nav a:last-of-type {
   padding-right: 0px;
 }
-/* line 32, ../scss/_header.scss */
+/* line 40, ../scss/_header.scss */
 header nav a:hover, header nav a.selected {
   opacity: 1;
 }
-/* line 37, ../scss/_header.scss */
+/* line 45, ../scss/_header.scss */
 header nav a.button {
   opacity: 1;
 }
-/* line 43, ../scss/_header.scss */
+/* line 51, ../scss/_header.scss */
 header h1 {
   padding-top: 178px;
   padding-bottom: 111px;
 }
-/* line 48, ../scss/_header.scss */
+/* line 56, ../scss/_header.scss */
 header h3 {
   text-align: center;
 }
-/* line 53, ../scss/_header.scss */
+/* line 61, ../scss/_header.scss */
 header .counter {
   padding-top: 40px;
   font-size: 30px;
 }
-/* line 57, ../scss/_header.scss */
+/* line 65, ../scss/_header.scss */
 header .counter div {
   float: left;
   width: 25%;
@@ -210,10 +218,65 @@ header .counter div {
   font-size: 30px;
   text-transform: uppercase;
 }
-/* line 65, ../scss/_header.scss */
+/* line 73, ../scss/_header.scss */
 header .counter div strong {
   width: 100%;
   display: inline-block;
+}
+
+/* line 82, ../scss/_header.scss */
+.sticky {
+  display: block;
+  width: 100%;
+  background-color: #f47a27;
+  height: 40px;
+  position: fixed;
+  top: -100%;
+  -webkit-transition: 1s all;
+}
+/* line 91, ../scss/_header.scss */
+.sticky > div {
+  width: 850px;
+  margin: auto;
+}
+/* line 96, ../scss/_header.scss */
+.sticky span {
+  padding: 5px 7px;
+  line-height: 40px;
+  color: white;
+}
+/* line 102, ../scss/_header.scss */
+.sticky a.hamburger {
+  display: none;
+}
+/* line 106, ../scss/_header.scss */
+.sticky.active {
+  top: 0px;
+  z-index: 20;
+}
+/* line 111, ../scss/_header.scss */
+.sticky nav {
+  float: right;
+  line-height: 40px;
+}
+/* line 115, ../scss/_header.scss */
+.sticky nav a {
+  color: white;
+  opacity: 0.5;
+  text-transform: uppercase;
+  padding-right: 20px;
+}
+/* line 122, ../scss/_header.scss */
+.sticky nav a:last-of-type {
+  padding-right: 0px;
+}
+/* line 126, ../scss/_header.scss */
+.sticky nav a:hover, .sticky nav a.selected {
+  opacity: 1;
+}
+/* line 131, ../scss/_header.scss */
+.sticky nav a.button {
+  opacity: 1;
 }
 
 /* line 1, ../scss/sections/_about.scss */
@@ -563,27 +626,66 @@ footer .links a:hover {
     padding-top: 52px;
   }
   /* line 19, ../scss/_responsive.scss */
+  header span,
   header nav {
     display: none;
   }
-  /* line 25, ../scss/_responsive.scss */
+  /* line 28, ../scss/_responsive.scss */
   header .counter div {
-    width: 33%;
+    width: 100%;
   }
-  /* line 29, ../scss/_responsive.scss */
+  /* line 32, ../scss/_responsive.scss */
+  header .counter .hours,
+  header .counter .minutes,
   header .counter .seconds {
     display: none;
   }
 
-  /* line 35, ../scss/_responsive.scss */
+  /* line 42, ../scss/_responsive.scss */
+  .sticky > div {
+    width: 100%;
+  }
+  /* line 46, ../scss/_responsive.scss */
+  .sticky a.hamburger {
+    font-size: 16px;
+    color: white;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 8px;
+    display: block;
+  }
+  /* line 56, ../scss/_responsive.scss */
+  .sticky nav {
+    background-color: #f47a27;
+    display: none;
+    padding: 0em 1em;
+    padding-right: 8px;
+  }
+  /* line 62, ../scss/_responsive.scss */
+  .sticky nav a {
+    width: 100%;
+    display: block;
+    float: right;
+    text-align: right;
+    padding-right: 0;
+  }
+  /* line 69, ../scss/_responsive.scss */
+  .sticky nav a.button.small {
+    border: none;
+    padding: 0px !important;
+    text-align: right;
+  }
+
+  /* line 78, ../scss/_responsive.scss */
   section {
     width: 100%;
   }
-  /* line 39, ../scss/_responsive.scss */
+  /* line 82, ../scss/_responsive.scss */
   section h2 {
     text-align: center !important;
   }
-  /* line 43, ../scss/_responsive.scss */
+  /* line 86, ../scss/_responsive.scss */
   section div.half {
     width: 100%;
     margin: 0;
@@ -591,59 +693,59 @@ footer .links a:hover {
     float: left !important;
   }
 
-  /* line 51, ../scss/_responsive.scss */
+  /* line 94, ../scss/_responsive.scss */
   #about {
     padding: 35px;
   }
-  /* line 55, ../scss/_responsive.scss */
+  /* line 98, ../scss/_responsive.scss */
   #about div.half:nth-of-type(1) {
     margin-bottom: 35px;
   }
 
-  /* line 61, ../scss/_responsive.scss */
+  /* line 104, ../scss/_responsive.scss */
   #when {
     padding-top: 35px;
   }
-  /* line 64, ../scss/_responsive.scss */
+  /* line 107, ../scss/_responsive.scss */
   #when h2.black {
     margin-bottom: 10px;
   }
-  /* line 68, ../scss/_responsive.scss */
+  /* line 111, ../scss/_responsive.scss */
   #when div.half {
     width: 100%;
     margin: 0;
     text-align: center;
   }
-  /* line 73, ../scss/_responsive.scss */
+  /* line 116, ../scss/_responsive.scss */
   #when div.half span {
     float: none !important;
   }
-  /* line 78, ../scss/_responsive.scss */
+  /* line 121, ../scss/_responsive.scss */
   #when p {
     padding: 0em 1em;
     padding-top: 30px;
   }
-  /* line 83, ../scss/_responsive.scss */
+  /* line 126, ../scss/_responsive.scss */
   #when a.button {
     width: 100%;
     margin-bottom: 1em;
   }
 
-  /* line 90, ../scss/_responsive.scss */
+  /* line 133, ../scss/_responsive.scss */
   #who .speaker {
     width: 100%;
   }
-  /* line 93, ../scss/_responsive.scss */
+  /* line 136, ../scss/_responsive.scss */
   #who .speaker img {
     max-width: 240px;
     width: 90%;
   }
 
-  /* line 101, ../scss/_responsive.scss */
+  /* line 144, ../scss/_responsive.scss */
   #creators .creator {
     width: 100%;
   }
-  /* line 104, ../scss/_responsive.scss */
+  /* line 147, ../scss/_responsive.scss */
   #creators .creator img {
     max-width: 240px;
     width: 90%;

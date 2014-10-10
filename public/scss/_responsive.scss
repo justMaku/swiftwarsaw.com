@@ -16,18 +16,61 @@ header {
 		padding-top: 52px;
 	}
 
+	span,
 	nav {
 		display: none;
 	}
 
+
+
 	.counter {
 
 		div {
-			width: 33%;
+			width: 100%;
 		}
 
+		.hours,
+		.minutes,
 		.seconds {
 			display: none;
+		}
+	}
+}
+
+.sticky {
+
+	>div {
+		width: 100%;
+	}
+
+	a.hamburger {
+		font-size: 16px;
+		color: white;
+		float: right;
+		height: 40px;
+		line-height: 40px;
+		padding-right: 8px;
+		display: block;
+	}
+
+	nav {
+		background-color: $orange;
+		display: none;
+		padding: 0em 1em;
+		padding-right: 8px;
+
+		a {
+			width: 100%;
+			display: block;
+			float: right;
+			text-align: right;
+			padding-right: 0;
+
+			&.button.small {
+				border: none;
+				padding: 0px !important;
+				text-align: right;
+			}
 		}
 	}
 }
