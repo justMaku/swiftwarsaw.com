@@ -1,0 +1,17 @@
+footer {
+	position: fixed;
+	z-index: -1;
+	bottom: 0;
+	background-color: $orange;
+	width: 100%;
+	height: 530px;
+}
+
+#fakebackground {
+	background-color: white;
+}
+
+#fakefooter {
+	height: 530px;
+	background-color: transparent;
+}
