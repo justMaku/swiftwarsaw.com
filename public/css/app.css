@@ -374,6 +374,12 @@ header .counter div strong {
   color: white;
 }
 
+/* line 1, ../scss/sections/_what.scss */
+#what {
+  height: 500px;
+  padding-top: 40px;
+}
+
 /* line 1, ../scss/sections/_creators.scss */
 #creators {
   padding-top: 40px;
