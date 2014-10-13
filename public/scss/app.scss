@@ -14,6 +14,12 @@ body {
  	-webkit-font-smoothing: antialiased;
 }
 
+
+#fakebackground {
+	background-color: white;
+}
+
+
 @import 'header';
 @import 'sections/about';
 @import 'sections/when';

@@ -146,6 +146,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* line 18, ../scss/app.scss */
+#fakebackground {
+  background-color: red;
+}
+
 /* line 1, ../scss/_header.scss */
 header {
   color: white;
@@ -594,11 +599,6 @@ footer .links a:hover {
 }
 
 /* line 68, ../scss/sections/_footer.scss */
-#fakebackground {
-  background-color: white;
-}
-
-/* line 72, ../scss/sections/_footer.scss */
 #fakefooter {
   height: 530px;
   background-color: transparent;
