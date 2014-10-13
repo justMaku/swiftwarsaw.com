@@ -3,6 +3,7 @@ use Rack::Static,
   :root => "public"
 
 run lambda { |env|
+  `compass compile public`
   [
     200,
     {
