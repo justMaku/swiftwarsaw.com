@@ -1,0 +1,233 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"text-",
+				"text-transform"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"INsta",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"HTML",
+				"Set Syntax: HTML"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 457.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/.sass-cache",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/css",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/img",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/js",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/scss/sections"
+	],
+	"file_history":
+	[
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/scss/sections/_creators.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/scss/sections/_who.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/scss/sections/_when.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/index.html",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/scss/_elements.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/js/app.js",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/scss/_header.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/scss/_responsive.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/css/app.css",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/scss/_colors.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/scss/app.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/scss/_colors.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/scss/sections/_about.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/scss/sections/_what.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/scss/sections/_about.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/scss/_header.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/scss/sections/_when.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/scss/sections/_where.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/css/app.css",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/scss/sections/_footer.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/scss/sections/_where.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/public/scss/app.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/scss/_elements.scss",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/index.html",
+		"/Users/maku/Projects/Macoscope/newswiftwarsaw.com/scss/_elements",
+		"/Users/maku/Projects/Macoscope/swiftwarsaw.com/index.html",
+		"/Users/maku/Projects/Macoscope/swiftwarsaw.com/scss/app.scss",
+		"/Users/maku/Projects/Macoscope/swiftwarsaw.com/stylesheets/app.css",
+		"/Users/maku/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/maku/Projects/Macoscope/VideoChat/DemoHTML/index.html",
+		"/Users/maku/Projects/Macoscope/BoxSync/callback.js",
+		"/Users/maku/Projects/Macoscope/BoxSync/sync.sh"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 106.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"clear",
+			"video"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "swiftwarsaw.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
