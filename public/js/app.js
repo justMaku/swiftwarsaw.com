@@ -3,6 +3,10 @@ $('.sticky a.hamburger').click(function (e) {
 	$('.sticky nav').toggle();
 });
 
+$('.sticky nav > a').click(function (e) {
+	$('.sticky nav').toggle();
+});
+
 $(document).scroll(function () {
     var y = $(this).scrollTop();
     if (y > 539) {
