@@ -23,7 +23,8 @@
 				border-radius: 60px;
 				border: 3px solid #f47a27;
 				left: -5em;
-				-webkit-transform: translateX(-51%);
+				top: 50%;
+				-webkit-transform: translate3D(-50%, -50%, 0);
 			}
 
 			span {

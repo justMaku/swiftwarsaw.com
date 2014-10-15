@@ -419,7 +419,7 @@ header .counter div strong {
   margin: 1em 0;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 }
 /* line 57, ../scss/sections/_who.scss */
 #who .speaker .links a {
@@ -478,22 +478,23 @@ header .counter div strong {
   border-radius: 60px;
   border: 3px solid #f47a27;
   left: -5em;
-  -webkit-transform: translateX(-51%);
+  top: 50%;
+  -webkit-transform: translate3D(-50%, -50%, 0);
 }
-/* line 29, ../scss/sections/_what.scss */
+/* line 30, ../scss/sections/_what.scss */
 #what div.agenda div.item span {
   width: 100%;
   display: inline-block;
 }
-/* line 34, ../scss/sections/_what.scss */
+/* line 35, ../scss/sections/_what.scss */
 #what div.agenda div.item span.time {
   color: #d2d2d2;
 }
-/* line 38, ../scss/sections/_what.scss */
+/* line 39, ../scss/sections/_what.scss */
 #what div.agenda div.item span.name {
   color: #f47a27;
 }
-/* line 44, ../scss/sections/_what.scss */
+/* line 45, ../scss/sections/_what.scss */
 #what div.agenda div.item:last-of-type p {
   margin-bottom: 0px;
 }

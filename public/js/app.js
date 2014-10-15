@@ -32,3 +32,32 @@ $('nav').onePageNav({
     scrollChange: function($currentListItem) {
     }
 });
+
+var target_date = new Date('November, 27, 2014').getTime();
+setInterval(function () {
+    updateCounter();
+}, 1000);
+
+updateCounter();
+
+function updateCounter() {
+     // find the amount of "seconds" between now and target
+    var current_date = new Date().getTime();
+    var seconds_left = (target_date - current_date) / 1000;
+
+    // do some time calculations
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
+
+    hours = parseInt(seconds_left / 3600);
+    seconds_left = seconds_left % 3600;
+
+    minutes = parseInt(seconds_left / 60);
+    seconds = parseInt(seconds_left % 60);
+
+    // format countdown string + set tag value
+    $('.counter .days strong').html(days);
+    $('.counter .hours strong').html(minutes);
+    $('.counter .minutes strong').html(minutes);
+    $('.counter .seconds strong').html(seconds);
+}

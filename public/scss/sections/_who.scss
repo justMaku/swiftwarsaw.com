@@ -52,7 +52,7 @@
 			margin: 1em 0;
 			position: absolute;
 			left: 50%;
-			transform: translateX(-50%);
+			-webkit-transform: translateX(-50%);
 
 			a {
 				width: 35px;
