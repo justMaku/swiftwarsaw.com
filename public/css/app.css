@@ -478,7 +478,7 @@ header .counter div strong {
   border-radius: 60px;
   border: 3px solid #f47a27;
   left: -5em;
-  transform: translateX(-51%);
+  -webkit-transform: translateX(-51%);
 }
 /* line 29, ../scss/sections/_what.scss */
 #what div.agenda div.item span {
@@ -753,56 +753,74 @@ footer .links a:hover {
 
   /* line 104, ../scss/_responsive.scss */
   #when {
+    padding: 1em 35px;
     padding-top: 35px;
   }
-  /* line 107, ../scss/_responsive.scss */
+  /* line 108, ../scss/_responsive.scss */
+  #when h2 {
+    margin-bottom: 0px;
+  }
+  /* line 111, ../scss/_responsive.scss */
   #when h2.black {
     margin-bottom: 10px;
   }
-  /* line 111, ../scss/_responsive.scss */
+  /* line 115, ../scss/_responsive.scss */
   #when div.half {
     width: 100%;
     margin: 0;
     text-align: center;
   }
-  /* line 116, ../scss/_responsive.scss */
+  /* line 120, ../scss/_responsive.scss */
   #when div.half span {
     float: none !important;
   }
-  /* line 121, ../scss/_responsive.scss */
+  /* line 125, ../scss/_responsive.scss */
   #when p {
     padding: 0em 1em;
     padding-top: 30px;
   }
-  /* line 126, ../scss/_responsive.scss */
+  /* line 130, ../scss/_responsive.scss */
   #when a.button {
     width: 100%;
     margin-bottom: 1em;
   }
 
-  /* line 133, ../scss/_responsive.scss */
+  /* line 137, ../scss/_responsive.scss */
   #who .speaker {
     width: 100%;
   }
-  /* line 136, ../scss/_responsive.scss */
+  /* line 140, ../scss/_responsive.scss */
   #who .speaker img {
     max-width: 240px;
     width: 90%;
   }
+  /* line 145, ../scss/_responsive.scss */
+  #who .speaker span.description {
+    padding: 0em 3em;
+  }
 
-  /* line 144, ../scss/_responsive.scss */
+  /* line 152, ../scss/_responsive.scss */
   #what div.agenda {
     width: 90%;
   }
 
-  /* line 150, ../scss/_responsive.scss */
+  /* line 158, ../scss/_responsive.scss */
   #creators .creator {
     width: 100%;
   }
-  /* line 153, ../scss/_responsive.scss */
+  /* line 161, ../scss/_responsive.scss */
   #creators .creator img {
     max-width: 240px;
     width: 90%;
+  }
+  /* line 166, ../scss/_responsive.scss */
+  #creators .creator .links {
+    margin-bottom: 1em;
+  }
+
+  /* line 173, ../scss/_responsive.scss */
+  footer .links {
+    margin-bottom: 70px;
   }
 }
 @media only screen and (min-device-width: 0px) and (max-device-width: 319px) {
@@ -825,6 +843,6 @@ footer .links a:hover {
     top: 50%;
     position: absolute;
     width: 100%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
   }
 }

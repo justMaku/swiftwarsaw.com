@@ -102,8 +102,12 @@ section {
 }
 
 #when {
+	padding: 1em 35px;
 	padding-top: 35px;
 
+	h2 {
+		margin-bottom: 0px;
+	}
 	h2.black {
 		margin-bottom: 10px;
 	}
@@ -137,6 +141,10 @@ section {
 			max-width: 240px;
 			width: 90%;
 		}
+
+		span.description {
+			padding: 0em 3em;
+		}
 	}
 }
 
@@ -154,6 +162,16 @@ section {
 			max-width: 240px;
 			width: 90%;
 		}
+
+		.links {
+			margin-bottom: 1em;
+		}
+	}
+}
+
+footer {
+	.links {
+		margin-bottom: 70px;
 	}
 }
 
