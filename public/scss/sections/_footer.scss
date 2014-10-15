@@ -1,13 +1,12 @@
 footer {
 	padding: 80px 0px;
-
+	z-index: -1;
 	a {
 		color: white;
 		font-weight: bold;
 	}
 
 	position: fixed;
-	z-index: -1;
 	bottom: 0;
 	background-color: $orange;
 	width: 100%;
@@ -65,7 +64,8 @@ footer {
 		}
 }
 
-#fakefooter {
-	height: 530px;
+.fakefooter {
+	margin-bottom: 530px;
 	background-color: transparent;
+	pointer-events: none;
 }

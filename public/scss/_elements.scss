@@ -10,7 +10,7 @@
 section {
 	width: $colwidth;
 	margin: auto;
-
+	z-index: 1000;
 	div.half {
 		width: 45%;
 		float: left;
@@ -24,7 +24,9 @@ section {
 .background {
 
 	width: 100%;
-
+	position: relative;
+	z-index: 300;
+	
 	&.gray {
 		background-color: $gray;
 	}

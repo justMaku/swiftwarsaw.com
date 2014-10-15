@@ -1,4 +1,50 @@
 #what {
-	height: 500px;
-	padding-top: 40px;
+	padding: 40px 0px;
+
+	h2 {
+		padding-bottom: 40px;
+	}
+
+	div.agenda {
+
+		width: 50%;
+		float: right;
+		padding-left: 5em;
+		border-left: 3px solid $orange;
+
+		div.item {
+
+			position: relative;
+
+			img {
+				width: 62px;
+				height: 62px;
+				position: absolute;
+				border-radius: 60px;
+				border: 3px solid #f47a27;
+				left: -5em;
+				transform: translateX(-51%);
+			}
+
+			span {
+				
+				width: 100%;
+				display: inline-block;
+
+				&.time {
+					color: #d2d2d2;
+				}
+
+				&.name {
+					color: $orange;
+				}
+			}
+
+			&:last-of-type {
+				p {
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
 }

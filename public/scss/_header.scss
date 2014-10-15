@@ -85,8 +85,8 @@ header {
 	background-color: #f47a27;
 	height: 40px;
 	position: fixed;
-	top: -100%;
-	-webkit-transition: 1s all;
+	top: -40px;
+	transition: 1s all;
 
 	>div {
 		width: $colwidth;
@@ -105,7 +105,9 @@ header {
 
 	&.active {
 		top: 0px;
-		z-index: 20;
+		z-index: 2000;
+		border-bottom: 1px solid darken($orange, 5%);
+		transition: 1s all;
 	}
 
 		nav {

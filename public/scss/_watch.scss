@@ -1,0 +1,19 @@
+body {
+	background: $orange;
+	> * {
+		display: none;
+	}
+
+	&:before {
+		display: block;
+		color: white;
+		text-align: center;
+		position: relative;
+		content: "Your watch is not supported, sorry kiddo.";
+		box-sizing: border-box;
+		top: 50%;
+		position: absolute;
+		width: 100%;
+		transform: translateY(-50%);
+	}
+}
