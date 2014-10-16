@@ -1,10 +1,10 @@
 $('.sticky a.hamburger').click(function (e) {
 	e.preventDefault();
-	$('.sticky nav').toggle();
+	$('.sticky nav').toggleClass('active');
 });
 
 $('.sticky nav > a').click(function (e) {
-	$('.sticky nav').toggle();
+	$('.sticky nav').removeClass('active');
 });
 
 $(document).scroll(function () {
@@ -13,6 +13,7 @@ $(document).scroll(function () {
         $('.sticky').addClass('active');
     } else {
         $('.sticky').removeClass('active');
+        $('.sticky nav').removeClass('active');
     }
 });
 

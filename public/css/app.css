@@ -195,7 +195,7 @@ header nav a {
 header nav a:last-of-type {
   padding-right: 0px;
 }
-/* line 41, ../scss/_header.scss */
+/* line 40, ../scss/_header.scss */
 header nav a:hover, header nav a.selected {
   opacity: 1;
 }
@@ -280,7 +280,7 @@ header .counter div strong {
 .sticky nav a:last-of-type {
   padding-right: 0px;
 }
-/* line 129, ../scss/_header.scss */
+/* line 128, ../scss/_header.scss */
 .sticky nav a:hover, .sticky nav a.selected {
   opacity: 1;
 }
@@ -303,6 +303,14 @@ header .counter div strong {
 #about p {
   font-size: 14px;
   line-height: 1.667;
+}
+/* line 15, ../scss/sections/_about.scss */
+#about p a {
+  color: #f47a27;
+}
+/* line 18, ../scss/sections/_about.scss */
+#about p a:hover {
+  color: white;
 }
 
 /* line 1, ../scss/sections/_when.scss */
@@ -390,7 +398,7 @@ header .counter div strong {
 /* line 21, ../scss/sections/_who.scss */
 #who .speaker img {
   border-radius: 240px;
-  width: 240px;
+  width: 90%;
   display: block;
   margin: auto;
 }
@@ -420,8 +428,9 @@ header .counter div strong {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
+  width: 127px;
 }
-/* line 57, ../scss/sections/_who.scss */
+/* line 58, ../scss/sections/_who.scss */
 #who .speaker .links a {
   width: 35px;
   height: 35px;
@@ -433,11 +442,11 @@ header .counter div strong {
   float: left;
   margin-right: 11px;
 }
-/* line 68, ../scss/sections/_who.scss */
+/* line 69, ../scss/sections/_who.scss */
 #who .speaker .links a:last-of-type {
   margin-right: 0em;
 }
-/* line 72, ../scss/sections/_who.scss */
+/* line 73, ../scss/sections/_who.scss */
 #who .speaker .links a:before {
   width: 35px;
   text-align: center;
@@ -445,7 +454,7 @@ header .counter div strong {
   height: 35px;
   line-height: 35px;
 }
-/* line 80, ../scss/sections/_who.scss */
+/* line 81, ../scss/sections/_who.scss */
 #who .speaker .links a:hover {
   background-color: #f47a27;
   color: white;
@@ -453,48 +462,52 @@ header .counter div strong {
 
 /* line 1, ../scss/sections/_what.scss */
 #what {
-  padding: 40px 0px;
+  padding: 0px 0px;
 }
-/* line 4, ../scss/sections/_what.scss */
+/* line 5, ../scss/sections/_what.scss */
 #what h2 {
-  padding-bottom: 40px;
+  padding-bottom: 0.5em;
+  text-align: left !important;
 }
-/* line 8, ../scss/sections/_what.scss */
+/* line 10, ../scss/sections/_what.scss */
 #what div.agenda {
   width: 50%;
   float: right;
   padding-left: 5em;
-  border-left: 3px solid #f47a27;
+  border-left: 3px solid #f6bb42;
+  padding-right: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
-/* line 15, ../scss/sections/_what.scss */
+/* line 20, ../scss/sections/_what.scss */
 #what div.agenda div.item {
   position: relative;
 }
-/* line 19, ../scss/sections/_what.scss */
+/* line 24, ../scss/sections/_what.scss */
 #what div.agenda div.item img {
   width: 62px;
   height: 62px;
   position: absolute;
   border-radius: 60px;
-  border: 3px solid #f47a27;
+  border: 3px solid #f6bb42;
   left: -5em;
   top: 50%;
   -webkit-transform: translate3D(-50%, -50%, 0);
 }
-/* line 30, ../scss/sections/_what.scss */
+/* line 35, ../scss/sections/_what.scss */
 #what div.agenda div.item span {
   width: 100%;
   display: inline-block;
 }
-/* line 35, ../scss/sections/_what.scss */
+/* line 40, ../scss/sections/_what.scss */
 #what div.agenda div.item span.time {
   color: #d2d2d2;
 }
-/* line 39, ../scss/sections/_what.scss */
+/* line 44, ../scss/sections/_what.scss */
 #what div.agenda div.item span.name {
   color: #f47a27;
 }
-/* line 45, ../scss/sections/_what.scss */
+/* line 50, ../scss/sections/_what.scss */
 #what div.agenda div.item:last-of-type p {
   margin-bottom: 0px;
 }
@@ -617,7 +630,7 @@ footer span {
 /* line 34, ../scss/sections/_footer.scss */
 footer .links {
   display: block;
-  width: 200px;
+  width: 151px;
   margin: 1em auto;
   margin-bottom: 90px;
 }
@@ -675,7 +688,7 @@ footer .links a:hover {
   header h1 {
     padding-top: 52px;
   }
-  /* line 20, ../scss/_responsive.scss */
+  /* line 19, ../scss/_responsive.scss */
   header span,
   header nav {
     display: none;
@@ -684,7 +697,7 @@ footer .links a:hover {
   header .counter div {
     width: 100%;
   }
-  /* line 34, ../scss/_responsive.scss */
+  /* line 32, ../scss/_responsive.scss */
   header .counter .hours,
   header .counter .minutes,
   header .counter .seconds {
@@ -708,11 +721,18 @@ footer .links a:hover {
   /* line 56, ../scss/_responsive.scss */
   .sticky nav {
     background-color: #f47a27;
-    display: none;
     padding: 0em 1em;
     padding-right: 8px;
+    display: block;
+    z-index: 20;
+    -webkit-transition: all 0.5s;
+    opacity: 0;
   }
-  /* line 62, ../scss/_responsive.scss */
+  /* line 64, ../scss/_responsive.scss */
+  .sticky nav.active {
+    opacity: 1;
+  }
+  /* line 68, ../scss/_responsive.scss */
   .sticky nav a {
     width: 100%;
     display: block;
@@ -720,108 +740,135 @@ footer .links a:hover {
     text-align: right;
     padding-right: 0;
   }
-  /* line 69, ../scss/_responsive.scss */
+  /* line 75, ../scss/_responsive.scss */
   .sticky nav a.button.small {
     border: none;
     padding: 0px !important;
     text-align: right;
   }
 
-  /* line 78, ../scss/_responsive.scss */
+  /* line 84, ../scss/_responsive.scss */
   section {
     width: 100%;
   }
-  /* line 82, ../scss/_responsive.scss */
+  /* line 88, ../scss/_responsive.scss */
   section h2 {
     text-align: center !important;
   }
-  /* line 86, ../scss/_responsive.scss */
+  /* line 92, ../scss/_responsive.scss */
   section div.half {
     width: 100%;
     margin: 0;
-    padding: 0em 1em;
     float: left !important;
   }
 
-  /* line 94, ../scss/_responsive.scss */
+  /* line 99, ../scss/_responsive.scss */
   #about {
     padding: 35px;
   }
-  /* line 98, ../scss/_responsive.scss */
+  /* line 103, ../scss/_responsive.scss */
   #about div.half:nth-of-type(1) {
     margin-bottom: 35px;
   }
 
-  /* line 104, ../scss/_responsive.scss */
+  /* line 109, ../scss/_responsive.scss */
   #when {
     padding: 1em 35px;
     padding-top: 35px;
   }
-  /* line 108, ../scss/_responsive.scss */
+  /* line 113, ../scss/_responsive.scss */
   #when h2 {
     margin-bottom: 0px;
   }
-  /* line 111, ../scss/_responsive.scss */
+  /* line 116, ../scss/_responsive.scss */
   #when h2.black {
     margin-bottom: 10px;
   }
-  /* line 115, ../scss/_responsive.scss */
+  /* line 120, ../scss/_responsive.scss */
   #when div.half {
     width: 100%;
     margin: 0;
     text-align: center;
   }
-  /* line 120, ../scss/_responsive.scss */
+  /* line 125, ../scss/_responsive.scss */
   #when div.half span {
     float: none !important;
   }
-  /* line 125, ../scss/_responsive.scss */
+  /* line 130, ../scss/_responsive.scss */
   #when p {
-    padding: 0em 1em;
     padding-top: 30px;
   }
-  /* line 130, ../scss/_responsive.scss */
+  /* line 134, ../scss/_responsive.scss */
   #when a.button {
     width: 100%;
     margin-bottom: 1em;
   }
 
-  /* line 137, ../scss/_responsive.scss */
+  /* line 141, ../scss/_responsive.scss */
   #who .speaker {
     width: 100%;
   }
-  /* line 140, ../scss/_responsive.scss */
+  /* line 144, ../scss/_responsive.scss */
   #who .speaker img {
     max-width: 240px;
     width: 90%;
   }
-  /* line 145, ../scss/_responsive.scss */
+  /* line 149, ../scss/_responsive.scss */
   #who .speaker span.description {
     padding: 0em 3em;
   }
 
-  /* line 152, ../scss/_responsive.scss */
+  /* line 156, ../scss/_responsive.scss */
   #what div.agenda {
     width: 90%;
+    padding-left: 3em;
+  }
+  /* line 160, ../scss/_responsive.scss */
+  #what div.agenda img {
+    left: -3em !important;
   }
 
-  /* line 158, ../scss/_responsive.scss */
+  /* line 167, ../scss/_responsive.scss */
   #creators .creator {
     width: 100%;
   }
-  /* line 161, ../scss/_responsive.scss */
+  /* line 170, ../scss/_responsive.scss */
   #creators .creator img {
     max-width: 240px;
     width: 90%;
   }
-  /* line 166, ../scss/_responsive.scss */
+  /* line 175, ../scss/_responsive.scss */
   #creators .creator .links {
     margin-bottom: 1em;
   }
 
-  /* line 173, ../scss/_responsive.scss */
+  /* line 182, ../scss/_responsive.scss */
   footer .links {
     margin-bottom: 70px;
+  }
+}
+@media only screen and (min-device-width: 720px) and (max-device-width: 850px) {
+  /* line 1, ../scss/_medium.scss */
+  header {
+    width: 100%;
+    padding: 0;
+  }
+  /* line 5, ../scss/_medium.scss */
+  header > div {
+    width: 100%;
+  }
+  /* line 9, ../scss/_medium.scss */
+  header h1 {
+    padding-top: 52px;
+  }
+
+  /* line 14, ../scss/_medium.scss */
+  section {
+    width: 100%;
+    margin: auto;
+    z-index: 1000;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
   }
 }
 @media only screen and (min-device-width: 0px) and (max-device-width: 319px) {

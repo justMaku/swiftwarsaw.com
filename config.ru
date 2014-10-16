@@ -2,12 +2,6 @@ use Rack::Static,
   :urls => ["/img", "/js", "/css"],
   :root => "public"
 
-compass = fork do
-  exec "compass watch public"
-end
-
-Process.detach(compass)
-
 run lambda { |env|
   [
     200,

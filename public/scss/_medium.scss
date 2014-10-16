@@ -1,0 +1,21 @@
+header {
+	width: 100%;
+	padding: 0;
+
+	>div {
+		width: 100%;
+	}
+
+	h1 {
+		padding-top: 52px;
+	}
+}
+
+section {
+	width: 100%;
+	margin: auto;
+	z-index: 1000;
+
+	padding-left: 1em !important;
+	padding-right: 1em !important;
+}

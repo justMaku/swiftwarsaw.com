@@ -11,6 +11,14 @@
 	p {
 		font-size: 14px;
 		line-height: 1.667;
+
+		a {
+			color: $orange;
+
+			&:hover {
+				color: white;
+			}
+		}
 	}
 
 }

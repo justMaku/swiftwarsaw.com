@@ -54,10 +54,16 @@ header {
 	}
 
 	nav {
-		background-color: $orange;
-		display: none;
+		background-color: #f47a27;
 		padding: 0em 1em;
 		padding-right: 8px;
+		display: block;
+		z-index: 20;
+		-webkit-transition: all 0.5s;
+		opacity: 0;
+		&.active {
+			opacity: 1;
+		}
 
 		a {
 			width: 100%;
@@ -86,7 +92,6 @@ section {
 	div.half {
 		width: 100%;
 		margin: 0;
-		padding: 0em 1em;
 		float: left !important;
 	}
 }
@@ -123,7 +128,6 @@ section {
 	}
 
 	p {
-		padding: 0em 1em;
 		padding-top: 30px;
 	}
 
@@ -151,6 +155,11 @@ section {
 #what {
 	div.agenda {
 		width: 90%;
+		padding-left: 3em;
+
+		img {
+			left: -3em !important;
+		}
 	}
 }
 

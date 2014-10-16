@@ -1,8 +1,10 @@
 #what {
-	padding: 40px 0px;
+	padding: 0px 0px;
+
 
 	h2 {
-		padding-bottom: 40px;
+		padding-bottom: 0.5em;
+		text-align: left !important;
 	}
 
 	div.agenda {
@@ -10,7 +12,10 @@
 		width: 50%;
 		float: right;
 		padding-left: 5em;
-		border-left: 3px solid $orange;
+		border-left: 3px solid #f6bb42;
+		padding-right: 1em;
+		padding-top: 2em;
+		padding-bottom: 2em;
 
 		div.item {
 
@@ -21,7 +26,7 @@
 				height: 62px;
 				position: absolute;
 				border-radius: 60px;
-				border: 3px solid #f47a27;
+				border: 3px solid #f6bb42;
 				left: -5em;
 				top: 50%;
 				-webkit-transform: translate3D(-50%, -50%, 0);
